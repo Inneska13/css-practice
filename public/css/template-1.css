@@ -1,0 +1,39 @@
+html {
+  max-width: 720px;
+}
+
+h3::before {
+  content: '$ ';
+  color: black;
+}
+
+h3::after {
+  content: ' /mo';
+  color: gray;
+}
+
+* {
+  color: black;
+  font: roboto;
+}
+
+svg {
+  background: rgb(85, 85, 243);
+  color: #fff;
+}
+
+a {
+  color: black;
+}
+
+#page_block {
+  color: black;
+}
+
+span {
+  color: gray;
+}
+
+.nav-link {
+  color: gray;
+}

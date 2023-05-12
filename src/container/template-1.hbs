@@ -1,0 +1,32 @@
+<div class="p-4">
+	{{>nav}}
+	
+<hr>
+<br>
+
+<div class="row">
+	{{#with hero}}
+	{{>hero}}
+	{{/with}}
+</div>
+	<br>
+	<hr>
+	<div class="page_block">
+<main class="row g-0 plans">
+{{#each plans}}
+{{>card}}
+{{/each}}
+</main>
+	</div>
+<br>
+<hr>
+
+<div class="page_block">
+	<footer class="row footer">
+		
+		{{> footer}}
+		
+	</footer>
+</div>
+	
+</div>

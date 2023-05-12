@@ -1,0 +1,26 @@
+<section>
+  <div class='row g-4'>
+	<div class="col-3">
+			{{>logo}}
+			<br>
+			<span class="footer_copyright">Copyright 2023-2024</span>
+		</div>
+    {{#each footer}}
+      <div class='nav col-3'>
+        <div>
+          <title>{{this.title}}</title>
+          {{#each links}}
+            <div>
+              <a
+                class='nav-link'
+                href='{{this.url}}'
+              >{{this.text}}</a>
+            </div>
+          {{/each}}
+        </div>
+
+      </div>
+
+    {{/each}}
+  </div>
+</section>

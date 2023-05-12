@@ -1,7 +1,79 @@
-html {
-  max-width: 720px;
+/* .card {
 }
 
-body {
-  background: #fff;
+.card > p {
+  color: green;
+  -webkit-text-fill-color: blue;
+  -webkit-text-stroke: 1px red;
+} */
+
+/* p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(226, 227, 222);
+  -webkit-text-stroke: 1px rgb(43, 226, 210);
+
+  direction: rtl;
 }
+
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset; */
+
+/* writing-mode: vertical-lr; */
+/* text-align: justify;
+
+  tab-size: 4;
+
+  letter-spacing: 0.03em;
+}
+
+span {
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: overline solid red;
+} */
+
+/* .span-b {
+  text-decoration-color: blue;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: double;
+} */
+
+/* pre {
+  tab-size: 99px;
+}
+
+* {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+} */
+
+/* span {
+  font-size: larger;
+
+  font-weight: lighter;
+
+  font-style: oblique;
+}
+.test {
+  display: none;
+} */
+
+/* .block {
+  display: inline-block;
+  background: rgb(208, 202, 202);
+  margin: auto;
+  width: 100%;
+
+  padding: 15px;
+} */
