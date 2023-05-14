@@ -1,17 +1,25 @@
-<div class='col-4'>
-  <div class="card p-3 m-3" >
-    <div class='card-header text-center'>
-      {{name}}
-    </div>
-    <div class='card-body text-center'>
-      <h3 class="box">{{price}}</h3>
-      {{#each features}}
-	  <div>
-        {{this}}</div>
-      {{/each}}
-      <div class='mt-3 btn btn-primary{{#if @first}}btn btn-outline-primary{{/if}}'>{{button}}</div>
-
-    </div>
-  </div>
-</div>
- 
+         {{#with data}}   
+			<div class="card">
+				<div class="card-header">
+					{{name}}
+				</div>
+				<div class="card-body">
+					<div class="card_block">
+						<span class="card_price_amount">
+							${{price}}
+						</span>
+						<span class="card_price_duration">
+							/mo
+						</span>
+					</div>
+					<div class="card_block">
+						{{#each features}}
+						<span class="card_description_item">{{this}}</span>
+						{{/each}}
+					</div>
+					<div class="card_block">
+						<button class="btn {{#if @first}}btn-outline-primary{{else}}btn-primary{{/if}} card_button">{{button}}</button>
+					</div>
+				</div>
+			</div>
+		{{/with}}

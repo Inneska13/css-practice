@@ -1,15 +1,5 @@
-<div class='row '>
-  <div class='col-12'>
-
-    <div class='d-flex justify-content-between'>
-		{{>logo}}
-		<div class="col-4 ">
-      {{#each header}}
-        <a href="{{url}}">{{text}}</a>
-      {{/each}}
-	  </div>
-	  
-    </div>
-
-  </div>
+<div class='nav {{#if isVertical}} nav_vertical {{else}}nav_inline{{/if}}'>
+  {{#each list}}
+    <a href='{{url}}' class='nav_link'>{{text}}</a>
+  {{/each}}
 </div>
