@@ -5,7 +5,7 @@
   --space-b: 36px;
 
   --size-d: 16px;
-  --size-mgi: 14px;
+  --size-m: 14px;
   --size-l: 20px;
 
   --color-border: #dee2e6;
@@ -100,6 +100,9 @@
   text-decoration: none;
 
   line-height: 100%;
+
+  transition-property: color;
+  transition-duration: 1s;
 }
 
 .nav_link:hover {
