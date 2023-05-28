@@ -1,3 +1,30 @@
+@keyframes fly {
+  from {
+    top: 0;
+    left: 0;
+    background: red;
+  }
+
+  25% {
+    top: 500;
+    left: 500;
+    background: blue;
+    width: 100px;
+  }
+
+  50% {
+    left: 0;
+    background: yellow;
+    width: 0px;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+    background: green;
+  }
+}
+
 :root {
   --space-m: 12px;
   --space-xm: 16px;
@@ -212,6 +239,9 @@
   text-decoration: none;
   padding: var(--space-m) var(--space-xm);
   border-radius: var(--border-radius);
+
+  transition-property: opacity, background-color, color;
+  transition-duration: 1s;
 }
 
 .card_button {
@@ -222,6 +252,8 @@
 
 .button:hover {
   opacity: 0.7;
+  background-color: yellow;
+  color: red;
 }
 
 .form {
@@ -294,8 +326,8 @@
 }
 
 .modal {
-  position: sticky;
-  top: 24px;
+  position: fixed;
+  top: 200px;
   left: 200px;
 
   /* height: 100px; */
@@ -311,6 +343,32 @@
   line-height: 150%;
 
   z-index: 2;
+
+  /* transition-property: top;
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(
+    -0.6,
+    -0.04,
+    0.98,
+    0.335
+  );
+  transition-delay: 3s; */
+}
+.modal {
+  animation-name: fly;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier (092 0 091 0.66);
+
+  animation-delay: 3s;
+  /* 
+  animation-iteration-count: infinite; */
+  animation-direction: alternate;
+
+  animation-fill-mode: both;
+}
+
+body:hover .modal {
+  animation-play-state: paused;
 }
 
 .modal_image {
