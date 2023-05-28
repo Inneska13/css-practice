@@ -48,18 +48,38 @@
 
 <div class="updates_list">
 	{{#each list}}
-	<img class="updates_image">
 	<div class="updates_info">
-		
-		<strong class="updates_name">{{nickname}}</strong>
-		<p class="updates_text">{{description}}</p>
+		<span class="updates_image"></span>
+		<div class="updates_row">
+			<strong class="updates_name">{{nickname}}</strong>
+			<p class="updates_text">{{description}}</p>
+		</div>
 	</div>
 	{{/each}}
 </div>
-	
+	{{#with show_all}}
+	<a href="{{url}}" class="updates_link">{{text}}</a>
+	{{/with}}
 	</div>
 	{{/with}}
 
+{{#with expirience}}
+<div class="expirience">
+	<h1 class="expirience_title">{{title}}</h1>
+	<span class="expirience_badge">{{badge}}</span>
+
+	
+	<div class="expirience_list">
+		{{#each list}}
+		<div class="expirience_card">
+		    <h3 class="expirience_name">{{name}}</h3>
+			<p class="expirience_text">{{details}}</p>
+		</div>
+		{{/each}}
+	</div>
+	
+</div>
+{{/with}}
 
 <footer class="footer" id="test">
 	<div>
