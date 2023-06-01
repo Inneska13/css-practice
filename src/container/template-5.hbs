@@ -12,7 +12,7 @@
 
 <main class="main">
 	{{#with messages}}
-	<div class="massages">
+	<div class="messages">
 		<h1 class="messages_title">{{title}}</h1>
           {{#each list}}
 		  <div class="msg">
@@ -47,7 +47,18 @@
 	
 	</form>
 	{{/with}}
+
+
+	{{#each advantages}}
+	<div class="advantage">
+		<strong>{{title}}</strong>
+		<p>{{text}}</p>
+	</div>
+	{{/each}}
+
+
 </main>
+
 
 <div class="advantages">
 	{{#each advantages}}
@@ -57,6 +68,7 @@
 	</div>
 	{{/each}}
 </div>
+
 
 <footer class="footer" id="test">
 	<div>
